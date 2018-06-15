@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TicTacToeGame.BoardController">
+   <children>
+      <BorderPane fx:id="mainBoard" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#restartGame" text="Restart" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuButton fx:id="DifficultyLevel" mnemonicParsing="false" text="Easy">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#DifficultySetEasy" text="Easy" />
+                      <MenuItem mnemonicParsing="false" onAction="#DifficultySetMedium" text="Medium" />
+                        <MenuItem mnemonicParsing="false" onAction="#DifficultySetHard" text="Hard" />
+                    </items>
+                  </MenuButton>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
